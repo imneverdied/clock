@@ -1,11 +1,12 @@
 #clock{
-  color:white;
+  color:yellow;
   font: 2em sans-serif; 
-  background: black; 
+  background: blue; 
   margin: 5px;
   padding: 5px;
-  border: solid gray 2px; 
+  border: solid gray 3px; 
   border-radius: 10px;
   width:140px;
   text-align:center;
+  font-family:serif;
 }
