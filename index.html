@@ -2,13 +2,13 @@
   <head>
 <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
 <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
-<div id="test">讀取中</div>
+<div id="test" >讀取中</div>
 <script  src='clock/DB.js'> </script>
 <link  rel=stylesheet type="text/css" href="myCss.css">
   </head>  
 <body>
   <video
-    id="test"
+    id="VEDIO"
     class="video-js"
     controls
     preload="auto"
@@ -17,7 +17,7 @@
     poster="MY_VIDEO_POSTER.jpg"
     data-setup="{}"
   >
-    <source src="test" type="video/mp4" />
+    <source src="" type="video/mp4" />
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a
       web browser that
@@ -30,3 +30,10 @@
   <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
 </body>
 </html>
+
+<script>
+function changeSrc()
+{
+document.getElementById("VEDIO").src=document.getElementById("test").value;
+}
+</script>
