@@ -1,11 +1,32 @@
 <html>
   <head>
+<link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
 <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
 <div id="test">讀取中</div>
 <script  src='clock/DB.js'> </script>
 <link  rel=stylesheet type="text/css" href="myCss.css">
   </head>  
-  <body >
-   
-  </body>
+<body>
+  <video
+    id="test"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src="test" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+  <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+</body>
 </html>
