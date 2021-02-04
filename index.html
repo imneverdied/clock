@@ -6,9 +6,9 @@
 <script  src='clock/DB.js'> </script>
 <link  rel=stylesheet type="text/css" href="myCss.css">
   </head>  
-<body>
+<body onload="changeSrc()">
   <video
-    id="VEDIO"
+    id="VEDIO_"
     class="video-js"
     controls
     preload="auto"
@@ -17,7 +17,7 @@
     poster="MY_VIDEO_POSTER.jpg"
     data-setup="{}"
   >
-    <source src="" type="video/mp4" />
+    <source id="VEDIO" type="video/mp4" />
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a
       web browser that
@@ -37,5 +37,5 @@ function changeSrc()
 document.getElementById("VEDIO").src=document.getElementById("test").value;
 }
   
-  setTimeout('changeSrc()', 5000 )
+
 </script>
