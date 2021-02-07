@@ -1,0 +1,39 @@
+#V_1 {
+  top: -15px;
+  left: -15px;
+  width:50px;
+  height: 50px;
+  background-color: #dddddd;
+  clip-path: polygon(20% 40%, 40% 40%, 60% 25%, 60% 85%, 40% 70%, 20% 70%);
+  z-index: 3;
+}
+
+#V_2 {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  width: 50px;
+  height: 50px;
+  background-color: #dddddd;
+  clip-path: polygon(50% 0, 70% 50%, 50% 100%, 42% 100%, 66% 50%, 42% 0);
+  z-index: 1;
+}
+
+#V_3 {
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  width: 50px;
+  height: 80px;
+  background-color: #dddddd;
+  clip-path: polygon(50% 0, 70% 50%, 50% 100%, 42% 100%, 66% 50%, 42% 0);
+  z-index: 1;
+}
+
+#DIV_V {
+  width: 120px;
+  height: 120px;
+  background-color: #000000;
+  clip-path: inset(0 0 0 0);
+  z-index: 2;
+}
