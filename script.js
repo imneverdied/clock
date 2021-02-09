@@ -14,7 +14,8 @@ function onYouTubeIframeAPIReady() {
     width: "100%",
     videoId: "ampmDPg4QrM",
     events: {
-      onReady: onPlayerReady
+      onReady: onPlayerReady,
+      playVideo
       //onStateChange: onPlayerStateChange
     }
   });
@@ -40,10 +41,20 @@ function stopVideo() {
 }
 
 function playVideo() {
+  var CS = document.getElementById("V_3");
   if (player.getPlayerState() == 1) {
     player.pauseVideo();
+
+    CS.style.animationName = "pause2play";
+    CS.style.animationDuration = "1";
+    CS.style.clipPath =
+      "polygon(30% 25%, 30% 75%, 90% 50%, 30% 25%, 30% 75%, 60% 50%, 48% 50%, 37% 62%, 34% 53%, 33% 36%)";
   } else {
     player.playVideo();
+    CS.style.animationName = "play2pause";
+    CS.style.animationDuration = "1";
+    CS.style.clipPath =
+      "polygon(18% 25%,18% 76%,40% 76%,40% 25%,59% 25%,59% 76%,36% 76%,18% 76%,81% 76%,80% 25%)";
   }
 }
 
