@@ -21,12 +21,13 @@
 
 #V_3 {
   position: relative;
-  top: -31px;
-  left: 0px;
-  width: 25px;
+  top: 0px;
+  left: -28px;
+  width: 20px;
   height: 37px;
   animation-name: "";
   animation-duration: 1s;
+  color: #1a1a1a;
   background-color: #1a1a1a;
   clip-path: polygon(
     30% 25%,
@@ -40,7 +41,7 @@
     34% 53%,
     33% 36%
   );
-  z-index: 1;
+  z-index: 3;
 }
 
 #V_4 {
@@ -62,7 +63,7 @@
   outline: none;
   background-color: rgba(0%, 0%, 100%, 0);
   clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 99%);
-  z-index: 10;
+  z-index: -1;
 }
 
 #DIV_V {
